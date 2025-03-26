@@ -10,7 +10,7 @@ import {
   Separator,
 } from '@/components/ui';
 
-const Navbar = () => {
+const NavBar = () => {
   const { setToken } = useAuth();
 
   const handleSignOut = async () => {
@@ -47,4 +47,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

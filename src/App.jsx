@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 
 import { useAuth } from '@/components/AuthProvider';
 import Devbar from '@/components/Devbar/Devbar';
-import Navbar from '@/components/Navbar.jsx';
+import NavBar from '@/components/NavBar';
 
 const App = () => {
   const { token } = useAuth();
@@ -13,7 +13,7 @@ const App = () => {
         <Devbar />
       </div>
       <div className='ml-[700px]'>
-        {token && <Navbar />}
+        {token && <NavBar />}
         <Outlet />
       </div>
     </>
